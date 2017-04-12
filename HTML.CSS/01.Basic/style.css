@@ -30,3 +30,55 @@ p{
   margin-top: 0;
   margin-bottom: 0;
 }
+
+a{
+  color: #0066bb;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#0077bb;
+}
+
+a:hover{
+  color:#111111;
+  text-decoration: underline;
+}
+
+a:visited{
+  color:red;
+}
+
+a:active{
+  color:gray;
+}
+
+.index1700{
+  text-decoration: line-through;
+}
+
+a[target="_blank"]::after {
+  content: url(opentab.png);
+}
+
+a[target="_blank"]::before{
+  content: "＊";
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail{
+  width:250px;
+}
+
+a:hover img{
+   opacity: 0.5;
+}
+
+a:hover .frame{
+  border: 1px solid red;
+}
