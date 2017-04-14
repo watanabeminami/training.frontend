@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body {
+  font-family: sans-serif;
+}
+
+h1{
+  font-size: 21px;
+}
+
+h2{
+  font-size: 18px;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+table{
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid #8fbac8;
+  padding: 8px;
+}
+
+
+
+.info{
+  list-style-type:none;
+}
+
+.profile{
+  padding:16px 20px 30px ;
+  border:1px solid #aaaaaa;
+
+
+.profile h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.caution a{
+  padding-left: 16px;
+  background: url(listmark.png) no-repeat left 0 top 4px;
+
+
+}
+
+
+a{
+  color: #0066bb;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#0077bb;
+}
+
+a:hover{
+  color:#111111;
+  text-decoration: underline;
+}
+
+a:visited{
+  color:red;
+}
+
+a:active{
+  color:gray;
+}
+
+.index1700{
+  text-decoration: line-through;
+}
+
+a[target="_blank"]::after {
+  content: url(opentab.png);
+}
+
+a[target="_blank"]::before{
+  content: "＊";
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail{
+  width:250px;
+}
+
+a:hover img{
+   opacity: 0.5;
+}
+
+a:hover .frame{
+  border: 1px solid red;
+}
