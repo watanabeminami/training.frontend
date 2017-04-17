@@ -17,19 +17,32 @@ p{
   margin-bottom: 0;
 }
 
+ul{
+  list-style-type: none;
+}
+
+
 .info{
   list-style-type:none;
 }
 
 .profile{
-  padding:16px ;
-  border: 1px solid #095cdc;
-}
+  padding:16px 20px 30px ;
+  border:1px solid #aaaaaa;
+
 
 .profile h2{
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.caution a{
+  padding-left: 16px;
+  background: url(listmark.png) no-repeat left 0 top 4px;
+
+
+}
+
 
 a{
   color: #0066bb;
