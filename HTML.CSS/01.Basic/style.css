@@ -21,6 +21,15 @@ ul{
   list-style-type: none;
 }
 
+table{
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid #8fbac8;
+  padding: 8px;
+}
+
+
 
 .info{
   list-style-type:none;
