@@ -49,6 +49,72 @@
 		</div>
 	</section>
 
+		<div>
+			<form action="#" method= "post"><p><label for ="name-field">お名前<span class="required">*必須</span></label><br>
+			<input type= "text" name="name" id="name-field" required><br>
+			<label for="pw-field">パスワード</label><br>
+			<input type="password" name="pw" id="pw-field"><br>
+			<label for="email-field">メールアドレス</label><br>
+			<input type="email" name="email" id='email-field' required><br>
+			<label for="tel-field">電話番号</label><br>
+			<input type="tel" name="tel" id="tel-field"><br>
+			<label for="number-field">内容数</label><br>
+			<input type="number" name="number" id="number-field"><br>
+			<label for="text-field">お問い合わせ内容</label><br>
+			<textarea name="text" id="" cols="30" rows="10" id="text-=field"></textarea>
+			</p>
+
+			<ul class="radiobox">
+				<li >
+					<input type="radio" name="duration" id="r1" value="1" checked><label for="r1">今すぐ出発</label>
+				</li>
+				<li>
+					<input type="radio" name="duration" id="r2"><label for="r2">出発時間</label>
+				</li>
+				<li>
+					<input type="radio" name="duration" id="r3"><label for="r3">到着時間</label>
+				</li>
+
+		</ul>
+		</form>
+		<p>
+			<label for="month">有効期限</label><br>
+			<select name="month" id="select">
+				<option value="" selected>月</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			/
+			<select name="year" id="select">
+				<option value="" selected>年</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+			</select>
+		</p>
+		<p><input type="submit" name="submit" value="送信する"　id="submit"></p>
+		</div>
+
+<form action="#" method="POST" id="contact">
+	<p><label for="name-field">お名前</label><br>
+		<input type="text" name="name" id="name-field"></p>
+		<p><label for="email-field">メールアドレス</label><br>
+		<input type="email" name="email" id="email-field"></p>
+		<p><label for="comment">コメント</label><br>
+			<textarea name="comment" id="comment" c></textarea></p>
+			<p class="submit-p"><input type="submit" value="送信する" id="submit" name="submit"></p>
+</form>
 
 <br>
 <br>
