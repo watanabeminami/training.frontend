@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>複数の背景画像を指定する | c06-05-c</title>
+<style>
+.block1 {
+	margin: 0;
+	padding: 32px;
+	width: 300px;
+	background: url(../../images/quote-left.png) no-repeat left 10px top 20px,
+				url(../../images/quote-right.png) no-repeat right 10px bottom 20px,
+				#eee;
+}
+
+.block2{
+	margin-top: 20;
+	margin-left: 0;
+	padding: 32px;
+	width: 300px;
+	background: url(quote-left.png) no-repeat 12px 20px,
+		url(quote-right.png) no-repeat right 10px bottom 20px,
+		 #eee
+}
+</style>
+</head>
+<body>
+<blockquote class="block1">
+ほかではなかなか見かけないプランでいい旅行ができました。また利用したいと思います！
+</blockquote>
+
+<blockquote class="block2">
+ほかではなかなか見かけないプランでいい旅行ができました。また利用したいと思います！
+</blockquote>
+</body>
+</html>
