@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/* 要素セレクタ */
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: #151515;
+  text-align: center;
+  font-size:1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #333333;
+  background:url("images/background-image.png") no-repeat fixed left bottom;
+  background-size:cover;
+  background-attachment: fixed;
+
+
+}
+ul{
+  list-style: none;
+}
+
+h1{
+  margin: 50px 0 40px;
+  font-size: 7.9rem;
+}
+a{
+  color:#FFFFFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* サイト全体タグ クラスセレクタ*/
+.site-header{
+  padding: 170px 30px 80px;
+  color:#FFFFFF;
+}
+.site-main{}
+.section-title{
+  margin:30px 0 15px;
+  padding-bottom: 15px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.section-title{
+  display: inline-block;
+  position:relative;
+}
+.section-title::before,
+.section-title::after{
+  content: "";
+  border-bottom: 1px solid #999999;
+  right:0;
+  left:0;
+  position: absolute;
+}
+.section-title::before{
+  bottom:0;
+}
+.section-title::after{
+  bottom: 5px;
+}
+
+.site-section.section-about{
+  padding: 80px 30px;
+  background-color: #FFFFFF;
+}
+
+.site-section.section-works{
+  padding: 80px 0px;
+  background-color: #383634;
+  color: #FFFFFF;
+}
+.site-section.section-skills{
+  padding: 80px 0px;
+  background-color: #FFFFFF;
+}
+.site-section.section-contact{
+  padding: 80px 0 150px;
+  color:#FFFFFF;
+}
+.site-footer{
+  padding:12px 0;
+  color:#FFFFFF;
+}
+
+/* サイトタイトル クラスセレクタ*/
+.section-header{
+  font-size: 4rem;
+
+}
+
+
+/* headerセクション*/
+.site-title-sub {
+  margin:0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after{
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin:0 30px;
+  vertical-align: middle;
+}
+h1+p{
+  color: #888888;
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+}
+.header-button{
+  margin:10px;
+  display: inline-block;
+  width: 200px;
+  padding:20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.header-button-1{
+  background-color:#afa58d;
+}
+.header-button-2{
+  background-color:#d29e04;
+}
+.header-button-1:hover,
+.header-button-2:hover
+{
+  opacity: 0.9;
+}
+/* aboutセクション*/
+.about-main>p{
+  margin: 30px 0;
+  line-height: 2.5;
+}
+/* worksセクション*/
+
+.works-images{
+ display: table;
+ table-layout: fixed;
+ width:100%;
+ margin-top: 60px;
+ }
+.works-contents{
+  display: table-cell;
+}
+.works-contents-images{
+width: 100%; 
+}
+.works-button{
+  margin-top: 20px;
+  padding: 5px 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+}
+
+
+/* skillsセクション*/
+/* contactセクション*/
+/* footerセクション*/
