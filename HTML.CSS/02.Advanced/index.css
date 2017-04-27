@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 /* 要素セレクタ */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
 html{
   font-size: 62.5%;
 }
@@ -13,8 +20,9 @@ body{
   background:url("images/background-image.png") no-repeat fixed left bottom;
   background-size:cover;
   background-attachment: fixed;
-
-
+}
+p{
+  display: block;
 }
 ul{
   list-style: none;
@@ -144,19 +152,26 @@ h1+p{
 }
 /* worksセクション*/
 
-.works-images{
+.ul-works-images{
  display: table;
  table-layout: fixed;
  width:100%;
  margin-top: 60px;
  }
-.works-contents{
+.li-works-contents{
   display: table-cell;
+  width:25%;
 }
-.works-contents-images{
-width: 100%; 
+.img-works-contents-images{
+width: 100%;
+margin:-2px;
 }
-.works-button{
+.img-works-contents-images1,
+.img-works-contents-images3
+{
+margin:60% 0 0;
+}
+.a-works-button{
   margin-top: 20px;
   padding: 5px 20px;
   border: 1px solid #FFFFFF;
@@ -164,8 +179,157 @@ width: 100%;
   background-color: rgba(255, 255, 255, 0.15);
   display: inline-block;
 }
+.for-p-size>p{
+  font-size:1.2rem;
+  line-height: 2;
+}
 
 
+/*それぞれの画像の説明部分位置設定*/
+/*１*/
+/*元になる場所*/
+.image-wrapper1{
+  position: relative;
+}
+.work-image-explainpart1{
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: table;
+}
+
+.work-image-explainpart-wrp1::after{
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url(images/image1.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-image-explainpart-wrp1{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+  top:0;
+}
+.for-varticle-align{
+  display: table-cell;
+  vertical-align: middle;
+}
+/*2*/
+/*元になる場所*/
+.image-wrapper2{
+  position: relative;
+}
+.work-image-explainpart2{
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.img-works-contents-images2{
+  margin: 0 0 60%;
+}
+
+.work-image-explainpart2::after{
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url(images/image2.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-image-explainpart-wrp2{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+  top:50%;
+}
+
+/*３*/
+/*元になる場所*/
+.image-wrapper3{
+  position: relative;
+}
+.work-image-explainpart3{
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.work-image-explainpart3::after{
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url(images/image3.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-image-explainpart-wrp3{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+  top:0;
+}
+/*4*/
+/*元になる場所*/
+.image-wrapper4{
+  position: relative;
+}
+.work-image-explainpart4{
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.img-works-contents-images4{
+  margin: 0 0 60%;
+}
+
+.work-image-explainpart4::after{
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url(images/image4.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-image-explainpart-wrp4{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+  top:50%;
+}
 /* skillsセクション*/
 /* contactセクション*/
 /* footerセクション*/
