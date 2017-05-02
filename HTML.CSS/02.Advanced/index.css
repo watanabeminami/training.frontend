@@ -189,6 +189,10 @@ margin-top: 60%;
   display: inline-block;
   width: 60%;
 }
+.a-works-button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
 .for-p-size>p{
   font-size:1.2rem;
   line-height: 2;
@@ -377,7 +381,7 @@ box-sizing: border-box;
 }
 /* skillsセクション*/
 .skills-images{
-  display: table;
+  display: block;
   width: 80%;
   margin: 50px auto 0;
 }
@@ -451,7 +455,9 @@ textarea:focus{
 }
 .submit-button:hover{
   background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
 }
+
 /* footerセクション*/
 .site-footer{
   padding:12px 0;
@@ -549,4 +555,10 @@ small{
   background-size: cover;
   top: 0;
 }
+}
+
+@media screen and (max-width: 414px){
+  .button-contents{
+    display: inline-block;
+  }
 }
