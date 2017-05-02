@@ -20,6 +20,7 @@ body{
   background:url("images/background-image.png") no-repeat fixed left bottom;
   background-size:cover;
   background-attachment: fixed;
+  background-color: #151515;
 }
 p{
   display: block;
@@ -37,7 +38,13 @@ a{
   text-decoration: none;
   font-size: 1.2rem;
 }
-
+button, input,select,textarea{
+  font: inherit;
+  margin: 0;
+}
+img{
+  vertical-align: middle;
+}
 /* サイト全体タグ クラスセレクタ*/
 .site-header{
   padding: 170px 30px 80px;
@@ -83,7 +90,7 @@ a{
   padding: 80px 0px;
   background-color: #FFFFFF;
 }
-.site-section.section-contact{
+.section-contact{
   padding: 80px 0 150px;
   color:#FFFFFF;
 }
@@ -91,6 +98,8 @@ a{
   padding:12px 0;
   color:#FFFFFF;
 }
+
+
 
 /* サイトタイトル クラスセレクタ*/
 .section-header{
@@ -161,23 +170,24 @@ h1+p{
 .li-works-contents{
   display: table-cell;
   width:25%;
+  position:relative;
 }
 .img-works-contents-images{
 width: 100%;
-margin:-2px;
 }
 .img-works-contents-images1,
-.img-works-contents-images3
-{
-margin:60% 0 0;
+.img-works-contents-images3{
+margin-top: 60%;
 }
+
 .a-works-button{
   margin-top: 20px;
-  padding: 5px 20px;
+  padding: 3px;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.15);
   display: inline-block;
+  width: 60%;
 }
 .for-p-size>p{
   font-size:1.2rem;
@@ -187,9 +197,12 @@ margin:60% 0 0;
 
 /*それぞれの画像の説明部分位置設定*/
 /*１*/
-/*元になる場所*/
 .image-wrapper1{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
 }
 .work-image-explainpart1{
   position: absolute;
@@ -200,18 +213,19 @@ margin:60% 0 0;
   display: table;
 }
 
-.work-image-explainpart-wrp1::after{
-  position: absolute;
-  content: '';
-  display: block;
-  background-image: url(images/image1.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top:0;
-  opacity: 0.2;
-  transform: scaleY(-1);
+.li-works-contents1::after{
+content: '';
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+background-image: url(images/image1.jpg);
+background-size: 100% 100%;
+transform: scaleY(-1);
+width: 100%;
+height: 50%;
+opacity: 0.2;
+box-sizing: border-box;
 }
 .work-image-explainpart-wrp1{
   position: absolute;
@@ -219,15 +233,20 @@ margin:60% 0 0;
   height: 50%;
   overflow-y: auto;
   top:0;
+  box-sizing: border-box;
 }
 .for-varticle-align{
   display: table-cell;
   vertical-align: middle;
+
 }
 /*2*/
-/*元になる場所*/
 .image-wrapper2{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  z-index: 1;
 }
 .work-image-explainpart2{
   position: absolute;
@@ -235,36 +254,46 @@ margin:60% 0 0;
   width: 100%;
   height: 100%;
   top: 0;
-}
-.img-works-contents-images2{
-  margin: 0 0 60%;
+  display: table;
+
 }
 
-.work-image-explainpart2::after{
-  position: absolute;
+.li-works-contents2::after{
   content: '';
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
   background-image: url(images/image2.jpg);
   background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top:0;
-  opacity: 0.2;
   transform: scaleY(-1);
+  width: 100%;
+  height: 50%;
+  opacity: 0.2;
+  box-sizing: border-box;
 }
 .work-image-explainpart-wrp2{
   position: absolute;
   width: 100%;
-  height: 50%;
+  height: 100%;
   overflow-y: auto;
-  top:50%;
+  top:0;
+  box-sizing: border-box;
 }
-
+.img-works-contents-images2{
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-bottom:  60%;
+}
 /*３*/
 /*元になる場所*/
 .image-wrapper3{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
 }
 .work-image-explainpart3{
   position: absolute;
@@ -272,20 +301,23 @@ margin:60% 0 0;
   width: 100%;
   height: 100%;
   top: 0;
+  display: table;
+
 }
 
-.work-image-explainpart3::after{
-  position: absolute;
+.li-works-contents3::after{
   content: '';
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(images/image3.jpg);
   background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top:0;
-  opacity: 0.2;
   transform: scaleY(-1);
+  width: 100%;
+  height: 50%;
+  opacity: 0.2;
+  box-sizing: border-box;
 }
 .work-image-explainpart-wrp3{
   position: absolute;
@@ -293,11 +325,17 @@ margin:60% 0 0;
   height: 50%;
   overflow-y: auto;
   top:0;
+  box-sizing: border-box;
 }
 /*4*/
 /*元になる場所*/
 .image-wrapper4{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  top: 50%;
+
 }
 .work-image-explainpart4{
   position: absolute;
@@ -305,31 +343,210 @@ margin:60% 0 0;
   width: 100%;
   height: 100%;
   top: 0;
-}
-.img-works-contents-images4{
-  margin: 0 0 60%;
+  display: table;
+
 }
 
-.work-image-explainpart4::after{
-  position: absolute;
+.li-works-contents4::after{
   content: '';
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
   background-image: url(images/image4.jpg);
   background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top:0;
-  opacity: 0.2;
   transform: scaleY(-1);
+  width: 100%;
+  height: 50%;
+  opacity: 0.2;
+  box-sizing: border-box;
 }
 .work-image-explainpart-wrp4{
   position: absolute;
   width: 100%;
-  height: 50%;
+  height: 100%;
   overflow-y: auto;
-  top:50%;
+  top:0;
+  box-sizing: border-box;
+}
+.img-works-contents-images4{
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-bottom:  60%;
 }
 /* skillsセクション*/
+.skills-images{
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+}
+.skills-box{
+  display: table-cell;
+}
+li > h3{
+  margin: 0 20px 20px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.skill-text{
+  margin: 0 20px;
+  line-height: 2;
+  color: #333333;
+}
+.skill-icon{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px auto;
+  border: 4px solid #f1b400;
+  line-height: 142px;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+}
+
+.fa-light::before{
+  content: "\f0eb";
+}
+.fa-pen::before{
+  content: "\f1fc";
+}
+.fa-code::{
+  content: "\f121";
+}
 /* contactセクション*/
+.all-form{
+  width: 50%;
+  margin: 50px auto 0;
+}
+.name-field,
+.message-field{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF;
+}
+.message-field{
+  height: 150px;
+}
+.submit-button{
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255,255,255, 0.6);
+}
+
+input:focus,
+textarea:focus{
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5 ) inset;
+}
+.submit-button:hover{
+  background-color: rgba(255, 255, 255, 0.05);
+}
 /* footerセクション*/
+.site-footer{
+  padding:12px 0;
+  font-size: 1.3rem;
+}
+small{
+  font-size: 1.3rem;
+}
+/* メディアクエリ*/
+
+@media screen and (max-width: 1024px){
+  body{
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    font-size: 1.3rem;
+  }
+  .site-header{
+    padding-top: 60px;
+  }
+  .site-title-sub{
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  h1{
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  .section-title{
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+.about-main>p{
+  line-height: 1.8;
+}
+.skills-main,{
+  display: block;
+}
+.skills-box{
+  display: block;
+  margin: 40px auto;
+}
+.skill-icon{
+  width: 100px;
+  height: 100px;
+  font-size: 5rem;
+  line-height: 92px;
+}
+.skill-text{
+  margin: 0;
+}
+.section-contact{
+  padding-bottom: 80px;
+}
+.contact-mains{
+  width:100%;
+}
+.all-form{
+  width: 80%;
+}
+/*works*/
+
+
+.ul-works-images,
+.li-works-contents{
+  display:block;
+  width: 100%;
+}
+.li-works-contents{
+  height: 164px;
+  position: relative;
+}
+
+.img-works-contents-images{
+  display: none;
+}
+.work-image-explainpart-wrp{
+  height: 100%;
+}
+.image-wrapper2,
+.image-wrapper4{
+  top: 0;
+  height: 100%;
+}
+.li-works-contents::after{
+  height: 100%;
+  background-size: cover;
+  top: 0;
+}
+}
