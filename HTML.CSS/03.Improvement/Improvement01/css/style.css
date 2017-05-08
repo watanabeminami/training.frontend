@@ -1,0 +1,934 @@
+@charset "utf-8";
+
+/* ----------------------------------------------------------------------
+RESET
+---------------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6,p,table,tbody,tr,td,th,label,span,div,header,body,ul,li,figure,dt,dd,dl,ol {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #2E2E2E;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+}
+ul,li {
+	list-style-type: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+	border: none;
+}
+*,
+*:before,
+*:after {
+	word-break: break-all;
+}
+/* ----------------------------------------------------------------------
+GENERAL
+---------------------------------------------------------------------- */
+.clearfix		{ zoom: 1; position: relative; }
+.clearfix:after	{ content: ""; display: block; clear: both; height: 0; }
+.slim {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+}
+/* ----------------------------------------------------------------------
+COMMON
+---------------------------------------------------------------------- */
+.left2-grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.left2-grid > *:first-child {
+	float: left;
+}
+.left2-grid > * + * {
+	overflow: hidden;
+}
+.img-text > span {
+	display: block;
+	text-indent: -9999px;
+}
+.centering-text {
+	text-align: center;
+}
+.sns > .mifb {
+	float: left;
+} 
+.sns > .mitw {
+	padding-top: 1px;
+	padding-left: 10px;
+	float: left;
+}
+.font-b {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+}
+.font-r {
+	font-family:'ヒラギノ角ゴ Pro W6','Hiragino Kaku Gothic Pro',sans-serif;
+}
+.dn {
+	display: none;
+}
+.spdn {
+	display: block;
+}
+.pcdn {
+	display: none;
+}
+.two-line {
+	line-height: 1.4!important;
+}
+/* ----------------------------------------------------------------------
+HEADER
+---------------------------------------------------------------------- */
+.site-header {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	max-width: 960px;
+	width: 100%;
+	z-index: 1;
+	left: 0;
+	right: 0;
+}
+.site-header > .site-logo {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.site-header > .site-logo-text {
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	color: #FFFFFF;
+}
+.header-img-wrap {
+	position: relative;
+	text-align: center;
+}
+.links {
+	margin-top: -5px;
+	float: right;
+}
+/* ----------------------------------------------------------------------
+FOOTER
+---------------------------------------------------------------------- */
+.footer {
+	width: 100%;
+	background: #333333;
+	padding: 20px 0 20px 70px;
+	overflow: hidden;
+	margin-top: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.footer .footer-logo {
+	float: left;
+	width: 50%;
+	height: auto;
+	margin-right: 0;
+	text-align: center;
+	opacity: .75;
+	filter: alpha(opacity=75);
+	-ms-filter: "alpha(opacity=75)";
+}
+.footer .logo-wrapper {
+	float: left;
+	width: 33.33%;
+	line-height: 33px;
+}
+.footer .menu-wrapper {
+	float: left;
+	width: 66.66%;
+	height: 42px;
+	line-height: 30px;
+}
+.footer .menu-wrapper li {
+	width: 29%;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+	margin-top: 0;
+}
+.footer .menu-wrapper li a {
+	font-size: 16px;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.footer .menu-wrapper li a:hover {
+	text-decoration: underline;
+}
+.footer-inner {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer .policy {
+	width: 30%!important;
+}
+.footer .terms {
+	width: 15%!important;
+}
+.footer .last {
+	width: 15%!important;
+}
+/* ----------------------------------------------------------------------
+BODY
+---------------------------------------------------------------------- */
+.main {
+	margin-top: 0!important;
+}
+.home-page {
+	min-width: 960px;
+	overflow: hidden;
+	background: #ECECEC;
+	position: relative;
+}
+.index-head {
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+}
+.kv-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 75%;
+	padding-top: 50px;
+	max-height: 231px;
+}
+.kv-text .kv-text-img {
+	height: 100%;
+	max-width: 1100px;
+	max-height: 231px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kv-link {
+	position: absolute;
+	display: block;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kv-link > a {
+	position: absolute;
+	right: 5.2%;
+	bottom: 19%;
+	display: block;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: normal;
+	padding-top: 0;
+	width: 9.4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.kv-link > .spdn:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+.kv-text-inner {
+	position: relative;
+	display: block;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.item-post {
+	display: inline-block;
+	font-size: 14px;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 15px;
+	padding: 0 0 0 44px;
+	background: #239DCB;
+	color: #FFFFFF;
+	position: relative;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.item-post.unique {
+	margin-top: 30px;
+}
+.item-post:after {
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 8px;
+	position: absolute;
+	margin: auto;
+	background: url(../images/icon_detial_btn.png) no-repeat;
+	top: -6px;
+	bottom: 0;
+	right: 36px;
+	background-size: contain;
+	-webkit-background-size: contain;
+}
+.section-block.white {
+	background-color: #FFFFFF;
+}
+.section-block.gray {
+	background-color: #F8F8F8;
+}
+.section-block.dark-gray {
+	background-color: #8A8A8A;
+	color: #FFFFFF;
+}
+.section-block {
+	padding-bottom: 40px;
+}
+.kv-landing + .section-block {
+	padding-top: 30px;
+}
+.section-block + .section-block {
+	padding-top: 30px;
+}
+.last-section-block {
+	padding-bottom: 60px;
+}
+.section-head + .section-inner-block {
+	margin-top: 30px;
+}
+.section-inner-block + .caution-block {
+	margin-top: 20px;
+}
+.section-text {
+	margin-top: 20px;
+}
+.section-link {
+	margin-top: 10px;
+	color: #888888;
+	font-size: 12px;
+}
+.section-link > a:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+.section-head {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1;
+}
+.section-head > span > em {
+	color: #239DCB;
+	font-style: normal;
+	font-weight: bold;
+}
+.section-subhead {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+}
+.price-text {
+	margin-top: 15px;
+	line-height: 1;
+	color: #20AA4B;
+}
+.curriculumdetail-list {
+	margin-top: 10px;
+	background-color: #FFFFFF;
+}
+.curriculumdetail-list > li + li {
+	border-top: 1px solid #ECECEC;
+}
+.curriculumdetail-list > li > a {
+	display: block;
+	padding: 15px;
+}
+.curriculumdetail-list > li > .curriculumdetail-link:hover,
+.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+.curriculumdetail-image {
+	width: 225px;
+	margin-right: 15px;
+}
+.curriculumdetail-item {
+	min-height: 100px;
+	overflow: auto;
+}
+.curriculumdetail-item > dt {
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: bold;
+}
+.curriculumdetail-item > dd {
+	font-size: 14px;
+	margin-top: 15px;
+}
+.curriculumdetail-item .pack-text {
+	text-indent: -7px;
+}
+.curriculumdetail-item .pack-text > span {
+	text-indent: 0;
+}
+.curriculumdetail-item > dd > .pack-text > span {
+	display: block;
+	color: #888888;
+}
+.curriculumdetail-item > dd > .pack-text + .curriculumdetail-detail-list {
+	margin-top: 15px;
+}
+.unique-chapter {
+	line-height: 1.1;
+}
+.caution-text {
+	line-height: 1;
+	color: #F2352E;
+}
+.caution-list {
+	margin-top: 10px;
+	font-size: 12px;
+}
+.caution-list > li {
+	line-height: 1.3;
+	text-indent: -5px;
+	color: #888888;
+}
+.caution-list > li + li {
+	margin-top: 5px;
+}
+.caution-list-detail-contents {
+	margin-top: 5px;
+	padding-left: 20px;
+}
+.caution-list-detail-contents > .caution-list-detail-text + .caution-list-detail-text {
+	margin-top: 5px;
+}
+.caution-mail {
+	position: relative;
+	margin-top: 15px;
+	color: #888888;
+	font-size: 12px;
+}
+.caution-mail > span {
+	display: block;
+	padding-left: 44px;
+}
+.caution-mail a:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+.caution-mail:before {
+	content: '';
+	display: block;
+	background-image: url(../images/arrow-bottom-gray.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 19px;
+	height: 14px;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	margin-top: 3px;
+}
+.procedure-list {
+	margin-top: -30px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.procedure-list > li {
+	float: left;
+	width: 50%;
+	padding: 30px 10px 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.procedure-block {
+	margin-top: 10px;
+}
+.procedure-block > .procedure-text {
+	line-height: 1;
+}
+.procedure-block-inner {
+	margin-top: 30px;
+}
+.profile-block {
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+.profile-img {
+	width: 150px;
+	height: 150px;
+}
+.profile-text {
+	padding: 10px 0 15px;
+}
+.profile-img + .profile-text {
+	padding-left: 30px;
+}
+.profile-name {
+	background-image: url(../images/profile-iguma-akira.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 384px;
+	height: 38px;
+}
+.profile-job {
+	margin-top: 15px;
+	line-height: 1.4;
+}
+.profile-job > span {
+	display: block;
+	line-height: 1.4;
+	font-size: 18px;
+}
+.profile-description {
+	margin-top: 10px;
+	line-height: 1;
+}
+.history-block {
+	padding-top: 20px;
+	border-top: solid 1px #FFFFFF;
+}
+.history-block-inner {
+	width: 50%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.history-block-inner + .history-block-inner {
+	padding-left: 40px;
+}
+.history-detail-list > dt {
+	width: 80px;
+}
+.history-contents > .history-category {
+	text-indent: -5px;
+}
+.history-block-inner > .history-contents + .history-contents {
+	margin-top: 20px;
+}
+.history-contents-list > li > span {
+	display: block;
+}
+.history-contents-list > li > .first-line {
+	text-indent: -5px;
+}
+.history-contents-list > li > .second-line {
+	text-indent: 9px;
+}
+.history-category {
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 736px) {
+	/* ----------------------------------------------------------------------
+	COMMON
+	---------------------------------------------------------------------- */
+	.spdn {
+		display: none;
+	}
+	.pcdn {
+		display: block;
+	}
+	/* ----------------------------------------------------------------------
+	HEADER
+	---------------------------------------------------------------------- */
+	.site-header {
+		margin-top: 25px;
+		padding: 0 0 0 8px;
+	}
+	.site-logo-text > span {
+		display: block;
+		font-size: 9px;
+	}
+	.site-logo-text > span > span {
+		display: block;
+	}
+	.links {
+		margin-top: 10px;
+		float: none;
+	}
+	/* ----------------------------------------------------------------------
+	BODY
+	---------------------------------------------------------------------- */
+	.kv-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		height: 50%;
+		max-width: 725px;
+		min-width: 300px;
+		max-height: initial;
+		width: 100%;
+		margin-bottom: 25%;
+		min-height: 273px;
+	}
+	.kv-text .kv-text-img {
+		max-width: 100%;	
+	}
+	.kv-link > a {
+		position: absolute;
+		right: 22%;
+		bottom: 9%;
+		display: block;
+		font-size: 14px;
+		color: #FFFFFF;
+		text-decoration: underline;
+		font-weight: normal;
+		padding-top: 0;
+		width: 23.4%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header-img-wrap > img {
+		width: 100%;
+	}
+	.home-page {
+		min-width: 320px;
+	}
+	.section-block.curriculumdetail-landing {
+		padding: 30px 10px 30px 10px;
+	}
+	.section-block.last-section-block {
+		padding-bottom: 50px;
+	}
+	.curriculumdetail-image {
+		text-align: center;
+		width: auto;
+	}
+	.curriculumdetail-image {
+		float: none!important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.curriculumdetail-list > li > a {
+		padding: 15px 15px;
+	}
+	.item-post {
+		max-width: 450px;
+		display: block;
+		width: 163px;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.curriculumdetail-item {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+	.curriculumdetail-item > dt {
+		font-size: 15px;
+	}
+	.curriculumdetail-item > dd {
+		font-size: 12px;
+	}
+	.section-subhead {
+		font-size: 15px;
+	}
+	.item-post {
+		text-align: center;
+		width: auto;
+		padding: 0;
+	}
+	.item-post:after {
+		content: '';
+		display: inline-block;
+		width: 22px;
+		height: 8px;
+		position: absolute;
+		margin: auto;
+		background: url(../images/icon_detial_btn.png) no-repeat;
+		top: -6px;
+		bottom: 0;
+		right: auto;
+		margin-left: 5px;
+		background-size: contain;
+		-webkit-background-size: contain;
+	}
+	.item-post.unique {
+		margin-top: 15px;
+	}
+	.curriculumdetail-item dt {
+		line-height: 1.4;
+	}
+	.curriculumdetail-item > dd {
+		line-height: 1.5;
+	}
+	.curriculumdetail-list > li > .curriculumdetail-link:hover,
+	.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: "alpha(opacity=100)";
+	}
+	.course-list > li > a:hover,
+	.course-list > li > a:hover .item-post{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: "alpha(opacity=100)";
+	}
+	.kv-text .kv-text-img {
+		min-height: 273px;
+		max-height: initial;
+	}
+	.section-head {
+		font-size: 19px;
+		line-height: inherit;
+	}
+	.section-head > span {
+		display: block;
+	}
+	.section-text {
+		font-size: 12px;
+	}
+	.section-link > a:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: "alpha(opacity=100)";
+	}
+	.unique-chapter {
+		line-height: inherit;
+	}
+	.caution-list {
+		font-size: 12px;
+	}
+	.caution-list-detail-contents {
+		text-indent: 0;
+	}
+	.caution-mail {
+		font-size: 12px;
+	}
+	.caution-mail > span {
+		padding-left: 45px;
+	}
+	.caution-mail:before {
+		content: '';
+		display: block;
+		background-image: url(../images/arrow-bottom-gray.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 18px;
+		height: 13px;
+		position: absolute;
+		top: 0;
+		left: 18px;
+		margin-top: 3px;
+	}
+	.caution-mail a:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: "alpha(opacity=100)";
+	}
+	.procedure-block > .procedure-text {
+		font-size: 12px;
+	}
+	.procedure-list > li {
+		float: none;
+		width: auto;
+	}
+	.profile-block > .profile-img,
+	.profile-block > .profile-text {
+		float: none;
+	}
+	.profile-img {
+		width: 171px;
+		height: 170px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.profile-name {
+		background-image: url(../images/profile-iguma-akira-sp.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 253px;
+		height: 26px;
+	}
+	.profile-text {
+		padding: 20px 0 0;
+	}
+	.profile-job,
+	.profile-job > span {
+		font-size: 15px;
+	}
+	.profile-description {
+		line-height: inherit;
+		font-size: 12px;
+	}
+	.profile-img + .profile-text {
+		padding-left: 0px;
+	}
+	.history-block > .history-block-inner {
+		float: none;
+		width: 100%;
+	}
+	.history-block-inner + .history-block-inner {
+		margin-top: 20px;
+		padding-left: 0;
+	}
+	.history-contents {
+		font-size: 12px;
+	}
+	.history-detail-list > dt {
+		width: 65px;
+	}
+	.history-contents-list > li > .second-line {
+		text-indent: 7px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.kv-text {
+		margin-top: 70px;
+	}
+}
+@media only screen and (max-width: 1080px) {
+	/* ----------------------------------------------------------------------
+	FOOTER
+	---------------------------------------------------------------------- */
+	.footer {
+		width: 100%;
+		background: #333333;
+		padding: 20px 0;
+		overflow: hidden;
+		padding-left: 0;
+	}
+	.footer .logo-wrapper {
+		float: none;
+		width: 100%;
+	}
+	.footer .footer-logo {
+		width: 50%;
+		height: 30%;
+		float: left;
+	}
+	.footer .menu-wrapper {
+		float: none;
+		width: 100%;
+	}
+	.footer .menu-wrapper li {
+		width: 50%;
+		float: left;
+		margin-top: 12px;
+	}
+	.footer-inner {
+		width: auto;
+	}
+	.footer .logo-wrapper {
+		line-height: auto;
+	}
+	.footer .menu-wrapper {
+		line-height: auto;
+	}
+	.footer .policy {
+		width: 50%!important;
+	}
+	.footer .terms {
+		width: 50%!important;
+	}
+	.footer .last {
+		width: 50%!important;
+	}
+}
+/* ----------------------------------------------------------------------
+IE8
+---------------------------------------------------------------------- */
+.ie-8 .section-link > a {
+	display: inline-block;
+}
+.ie-8 .kv-landing .item-post:after {
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 9px;
+	position: absolute;
+	margin: auto;
+	background: url(../images/ie8-icon_detial_btn.png) no-repeat;
+	top: -6px;
+	bottom: 0;
+	right: 33px;
+}
+.ie-8 .item-post:after {
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 9px;
+	position: absolute;
+	margin: auto;
+	background: url(../images/ie8-icon_detial_btn.png) no-repeat;
+	top: -6px;
+	bottom: 0;
+	right: 15px;
+}
+.ie-8 .section-btn-area > .item-post-all:after {
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 9px;
+	position: absolute;
+	margin: auto;
+	background: url(../images/ie8-icon_detial_btn.png) no-repeat;
+	top: -6px;
+	bottom: 0;
+	right: 85px;
+}
+.ie-8 .profile-name {
+	background-image: url(../images/ie8-profile-iguma-akira.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 384px;
+	height: 38px;
+}
+.ie-8 .caution-mail:before {
+	content: '';
+	display: block;
+	background-image: url(../images/ie8-arrow-bottom-gray.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 22px;
+	height: 16px;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	margin-top: 3px;
+}
+.ie-8 .curriculumdetail-item > dt {
+	font-family: 'ＭＳ Ｐゴシック'!important;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+.ie-8 .caution-mail a {
+	display: inline-block;
+}
+.ie-8 .curriculumdetail-item .pack-text {
+	text-indent: 0;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>初めてのシングルページレイアウト</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <p class= "site-title-sub">Web designer's portfolio</p>
+    <h1>HI, MY NAME IS...</h1>
+    <p class ="sub-title">Check out some of my works.</p>
+    <ul class= "button-contents">
+      <li><a class="header-button header-button-1" href="#learn-more">LEARN MORE</a></li>
+      <li><a class="header-button header-button-2" href="#send-message">SEND MESSAGE</a></li>
+    </ul>
+  </header>
+
+  <main class="site-main">
+    <section class="site-section section-about">
+      <header class="section-header about-header">
+        <h2 class="section-title about-title" id="learn-more">ABOUT ME</h2>
+      </header>
+      <div class="section-main about-main">
+        <p>
+          はじめまして。日本でWebデザイナーをしています。<br>
+          デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+          </p>
+        <p>このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br>
+        このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p>
+      </div>
+    </section>
+
+    <section class="site-section section-works">
+      <header class="section-header works-header">
+        <h2 class= "section-title works-title">WORKS</h2>
+      </header>
+
+      <div class= "section-main works-main">
+        <ul class="ul-works-images">
+          <!-- １めの画像 -->
+          <li class= "li-works-contents li-works-contents1">
+            <img src="images/image1.jpg" alt="夜空と木の写真" class= "img-works-contents-images img-works-contents-images1">
+            <div class="image-wrapper1">
+              <div class="work-image-explainpart-wrp work-image-explainpart-wrp1">
+                <div class="for-p-size work-image-explainpart1">
+                  <p class="for-varticle-align">ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="a-works-button">READ MORE</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- ２つめの画像 -->
+          <li class= "li-works-contents li-works-contents2">
+            <img src="images/image2.jpg" alt="都会と歩く人の足の写真" class= "img-works-contents-images img-works-contents-images2">
+            <div class="image-wrapper2">
+              <div class="work-image-explainpart-wrp work-image-explainpart-wrp2">
+                <div class="for-p-size work-image-explainpart2">
+                  <p class="for-varticle-align">ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="a-works-button">READ MORE</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class= "li-works-contents li-works-contents3">
+            <img src="images/image3.jpg" alt="星空と鴨の池の写真" class= "img-works-contents-images img-works-contents-images3">
+            <div class="image-wrapper3">
+              <div class="work-image-explainpart-wrp work-image-explainpart-wrp3">
+                <div class="for-p-size work-image-explainpart3">
+                  <p class="for-varticle-align">みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="a-works-button">READ MORE</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class= "li-works-contents li-works-contents4">
+            <img src="images/image4.jpg" alt="コスモスと空の写真" class= "img-works-contents-images img-works-contents-images4">
+            <div class="image-wrapper4">
+              <div class="work-image-explainpart-wrp work-image-explainpart-wrp4">
+                <div class="for-p-size work-image-explainpart4">
+                  <p class="for-varticle-align">よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="a-works-button">READ MORE</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="site-section section-skills">
+      <header class="section-header skills-header">
+        <h2 class="section-title skills-titles">MY SKILLS</h2>
+      </header>
+      <div class="section-main skills-main">
+        <ul class="skills-images">
+          <li class="skills-box box1">
+            <i class="skill-icon fa fa-light"></i>
+            <h3>IDEA</h3>
+            <p class="skill-text">何かを考えることが好きです。<br>新しいことを思いついては試しています。<br>ディレクションの経験もあります。</p>
+          </li>
+          <li class="skills-box box2">
+            <i class="skill-icon fa fa-pen"></i>
+            <h3>DESIGN</h3>
+            <p class="skill-text">見た目の綺麗さだけじゃなくて、<br>使いやすさ、情報の伝わりやすさなど、<br>その先まで考えることを意識しています。</p>
+          </li>
+          <li class="skills-box box3">
+            <i class="skill-icon fa fa-code"></i>
+            <h3>CODING</h3>
+            <p class="skill-text">HTML/CSSコーディングも行います。<br>正しく美しいマークアップと、<br>今後の変更への強さを考慮しています。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="site-section section-contact">
+      <header class="section-header contact-header">
+        <h2 class="section-title contact-titles" id="send-message">CONTACT</h2>
+      </header>
+      <div class="section-main contact-mains">
+        <form class="all-form">
+          <input type="text" name="name" placeholder="NAME" class="name-field" >
+          <textarea name="message" placeholder="MESSAGE" class="message-field"></textarea>
+          <button type="submit" name="submit" class="submit-button">SEND</button>
+        </form>
+    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><small>&copy; sample site</small></p>
+  </footer>
+</body>
+</html>
