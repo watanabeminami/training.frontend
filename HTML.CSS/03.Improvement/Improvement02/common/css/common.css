@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*=========== clearfix ===========*/
+.clearfix:after {
+	content: ".";  /* 新しい要素を作る */
+	display: block;  /* ブロックレベル要素に */
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;/*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+/*=========== /clearfix ===========*/
+
+/*=========== common ===========*/
+
+/* --------------------------------------------------
+class指定のみでマウスオーバー効果 (base.js)
+※fadeの透過時間は、base.jsにて調節
+-------------------------------------------------- */
+.swap {
+} /*ON/OFF　　※同ディレクトリ内にある[ 同じimg名 + _on ]の画像に変わる*/
+.swapfade {
+} /*ON/OFF　　※同ディレクトリ内にある[ 同じimg名 + _on ]の画像に変わる フェード効果付き*/
+.fade {
+} /*半透過*/
+.fadefix {
+} /*完全透過　　※背景にON画像を入れておく*/
+/* --------------------------------------------------
+リンク内の画像のマウスオーバー効果
+-------------------------------------------------- */
+a:hover img.hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:link {
+	color: white;
+	text-decoration: underline;
+}
+a:visited {
+	color: white;
+	text-decoration: underline;
+}
+a:hover {
+	color: #d3e0ec;
+}
+a:active {
+	color: white;
+}
+img {
+	border: none;
+	vertical-align: bottom;
+}
+br {
+	letter-spacing: 0;
+}
+body {
+	color: #54190B;
+	font: 13px/1.5 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color: #FFFFFF;
+	letter-spacing: 0.1em;
+}
+/* for IE6 */
+* html body, * html input, * html textarea {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+#wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1500px;
+}
+#box {
+	display: none;
+}
+#inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+.grayout {
+	color: #CCC;
+	font: 12px "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+.grayout2 {
+	opacity: 0.4;
+}
+.f_grayout {
+	color: #CCC;
+	font: italic bold 10px "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	padding-top: 3px;
+}
+/*=========== /common ===========*/
+
+/*=========== header ===========*/
+#site-header {
+	position: fixed;
+	top: 0;
+	left: auto;
+	width: 100%;
+	height: 140px;
+	z-index: 100;
+	-webkit-transition: height 0.4s ease-in-out;
+	-moz-transition: height 0.4s ease-in-out;
+	-o-transition: height 0.4s ease-in-out;
+	transition: height 0.4s ease-in-out;
+	margin: 0 auto;
+	min-width: 1000px;
+	max-width: 1500px;
+}
+#site-title {
+	position: relative;
+	left: 50%;
+	width: 94px;
+	line-height: 0;
+	font-size: 100%;
+	z-index: 5;
+	padding: 45px 0 52px 0;
+	margin-left: -47px;
+	min-width: 1000px;
+}
+#main-nav {
+	display: block;
+	position: absolute;
+	top: 63px;
+	left: 30px;
+	line-height: 100%;
+	font-size: 100%;
+	width: 850px;
+}
+
+#info-nav {
+	display: block;
+	position: absolute;
+	top: 100px;
+	left: 210px;
+	line-height: 100%;
+	font-size: 100%;
+	width: 850px;
+	margin-right: 20px;
+}
+#main-nav li,
+#info-nav > li {
+	float: left;
+	margin: -5px 20px 0 0;
+	list-style: none;
+	padding-bottom: 20px;
+}
+#info-nav #onlinestore {
+	padding-bottom: 0;
+}
+#main-nav li a,
+#info-nav a {
+	display: block;
+	text-decoration: none;
+	color: #c74e17;
+	font: bold 12px "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+#storelist-nav {
+    display: none;
+    position: absolute;
+}
+#storelist-nav li {
+    width: 135px;
+    height: 25px;
+    background-color: #c74e17;
+    text-align: center;
+    border-top: 1px #ffffff solid;
+}
+#storelist-nav li a {
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.sacsbar-font{
+	font-size: 11px;
+}
+
+#menu-open-btn {
+	position: absolute;
+	right: 70px;
+	font-size: 0;
+	line-height: 0;
+	z-index: 10;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	top: 66px;
+}
+#site-header.active #menu-open-btn {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+#main-nav #kissora {
+	padding: 0;
+	margin: -20px 50px 0 40px;
+}
+#main-nav #onlinestore {
+	position: relative;
+    padding: 0;
+}
+#onlinestore > .fade {
+	opacity: 0.6;
+}
+
+/*=========== /header ===========*/
+
+/*=========== footer ===========*/
+footer {
+	width: 100%;
+	min-width: 1000px;
+	clear: both;
+	background-color: #F4F4F2;
+	padding: 40px 0;
+}
+#footer_inner {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+#fnav {
+	float: left;
+}
+#fnav li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin-left: 38px;
+}
+#fnav li a {
+	text-decoration: none;
+	color: #D46D40;
+	font: italic bold 10px "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+#copyright {
+	float: right;
+	text-align: center;
+	font: bold 10px "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	color: #54180D;
+	margin: 3px 30px 0 0;
+}
+/*=========== /footer ===========*/

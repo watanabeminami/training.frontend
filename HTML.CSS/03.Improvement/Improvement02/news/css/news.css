@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*=========== newsページ ===========*/
+#news {
+	margin-top: 255px;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 1500px;
+}
+#news #newstitle {
+	text-align: center;
+	width: 100%;
+}
+#news .newsset {
+	width: 1000px;
+	margin: 0 auto 145px;
+	padding-top: 80px;
+}
+#news .newsset .news_l {
+	width: 533px;
+	float: left;
+	margin-right: 50px;
+}
+#news .newsset .news_l img {
+	margin-bottom: 20px;
+}
+#news .news_r {
+	float: right;
+	width: 417px;
+}
+#news .news_r h3 {
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	color: #531808;
+}
+#news .news_r .news_date {
+	color: #531808;
+	margin: 30px 0 60px;
+	font: italic bold 12px "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+#news .news_r #news_detail {
+	line-height: 2;
+	letter-spacing: 0.1em;
+	color: #54190b;
+}
+.event_title {
+	font-size: 114%;
+}
+.workshop_list {
+	margin-left: 20px;
+}
+.workshop_list li {
+	margin-bottom: 5px;
+}
+.workshop-date,
+.timetable{
+	font-size: 12px;
+}
+.shopname {
+	display: block;
+}
+/*=========== /newsページ ===========*/
+#news .news_r #news_detail a {
+	color: #54190b;
+}
+.detail-underline {
+	text-decoration: underline;
+}
+/*=========== newsページ RECRUIT ===========*/
+.recruit_table_row{
+	width: 65px;
+}
+/*=========== /newsページ RECRUIT ===========*/
