@@ -70,20 +70,15 @@ h1 {
   display:  flex;
   width: 100%;
   flex-wrap: wrap;
+  margin:0 -7px;
 }
+
 
 .sample-images>li {
-  /*margin-right: 15px;*/
-  margin-bottom: 1%;
-  width:32%;
-}
-.margin-images {
-	margin-left: 5%;
-	margin-right: 5%;
-
-}
-.margin-images2 {
-	margin-left: 10%;
+	padding: 0 7px;
+	width: 33.33%;
+	margin-top: 7px;
+	box-sizing: border-box;
 }
 /*上の文章*/
 .text-list {
@@ -118,6 +113,9 @@ article{
 }
 .line-images {
 	width: 100%;
+}
+li>a {
+	display: block;
 }
 /*最後の画像*/
 .footer-images {
