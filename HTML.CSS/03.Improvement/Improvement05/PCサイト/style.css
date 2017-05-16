@@ -55,7 +55,7 @@ header {
 h1 {
   font-size: 30px;
   color:#444444;
-  border-bottom: 0.1px solid #AAAAAA;
+  border-bottom: 1px solid #AAAAAA;
   margin-bottom: 30px;
 }
 .top-image {
